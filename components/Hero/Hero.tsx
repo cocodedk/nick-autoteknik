@@ -17,6 +17,7 @@ export function Hero({ content }: HeroProps) {
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center md:text-left">
+          <h1 className="sr-only">{`${business.name} - Autoværksted i Rødovre`}</h1>
           <div className="flex justify-center md:justify-start mb-2 bg-white">
             <Image
               src="/logo/nick-autoteknik-logo.png"
