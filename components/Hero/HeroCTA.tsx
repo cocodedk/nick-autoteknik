@@ -8,7 +8,13 @@ interface HeroCTAProps {
 }
 
 export function HeroCTA({ phone, phoneFormatted, address }: HeroCTAProps) {
-  const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
+  const cid = process.env.NEXT_PUBLIC_GOOGLE_MAPS_CID;
+  const placeId = process.env.NEXT_PUBLIC_GOOGLE_MAPS_PLACE_ID;
+  const mapsUrl = cid
+    ? `https://www.google.com/maps?cid=${encodeURIComponent(cid)}`
+    : placeId
+    ? `https://www.google.com/maps/search/?api=1&query_place_id=${encodeURIComponent(placeId)}`
+    : `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
 
   return (
     <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
