@@ -1,0 +1,69 @@
+{
+  "business": {
+    "name": "Nick Autoteknik",
+    "address": "Nyholms Allé 21, port 3, Rødovre, Denmark",
+    "postalCode": "2610",
+    "city": "Rødovre",
+    "phone": "26 80 81 88",
+    "phoneFormatted": "+4526808188",
+    "email": "nickautoteknik@gmail.com",
+    "cvr": "41401869",
+    "hours": {
+      "monday": "08:00-17:00",
+      "tuesday": "08:00-17:00",
+      "wednesday": "08:00-17:00",
+      "thursday": "08:00-17:00",
+      "friday": "08:00-17:00",
+      "saturday": "Lukket",
+      "sunday": "Lukket"
+    }
+  },
+  "hero": {
+    "tagline": "Professionel bilservice i Rødovre",
+    "subtitle": "Service og reparation af alle bilmærker",
+    "usps": [
+      "Service efter fabrikantens forskrifter",
+      "Alle bilmærker",
+      "Hurtig tid",
+      "Erfarne mekanikere"
+    ]
+  },
+  "services": [
+    {
+      "title": "Service & Inspektion",
+      "description": "Periodisk service efter fabrikantens anvisninger"
+    },
+    {
+      "title": "Bremser",
+      "description": "Udskiftning af bremseskiver, klodser og væske"
+    },
+    {
+      "title": "Dæk & Fælge",
+      "description": "Dækskift, afbalancering og montering"
+    },
+    {
+      "title": "Diagnose",
+      "description": "Fejlfinding med moderne computerudstyr"
+    },
+    {
+      "title": "Aircondition",
+      "description": "Service og reparation af AC-anlæg"
+    },
+    {
+      "title": "Synsklargøring",
+      "description": "Gør din bil klar til periodisk syn"
+    }
+  ],
+  "reviews": {
+    "googleUrl": "https://www.google.com/maps/place/Nyholms+All%C3%A9+21,+2610+R%C3%B8dovre",
+    "facebookUrl": "https://www.facebook.com/people/Nick-Autoteknik/100032983761989"
+  },
+  "footer": {
+    "tagline": "Dit autoværksted i Rødovre siden 2020",
+    "links": [
+      { "label": "Privatlivspolitik", "href": "#" },
+      { "label": "Cookies", "href": "#" }
+    ]
+  }
+}
+
