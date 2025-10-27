@@ -60,6 +60,18 @@ export function Footer({ businessName, cvr, tagline, links }: FooterProps) {
           <p>
             &copy; {currentYear} {businessName}. Alle rettigheder forbeholdes.
           </p>
+          <p className="mt-1 text-xs text-gray-500">
+            Designet og implementeret af
+            {' '}
+            <a
+              href="https://cocode.dk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-brand-red"
+            >
+              cocode.dk
+            </a>
+          </p>
         </div>
       </div>
     </footer>

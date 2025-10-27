@@ -51,6 +51,7 @@ export default function RootLayout({
     "@type": "AutomotiveBusiness",
     "@id": "https://nickautoteknik.dk",
     name: business.name,
+    logo: "/logo/nick-autoteknik-logo.png",
     description: "Autoværksted - service og reparation af alle bilmærker",
     url: "https://nickautoteknik.dk",
     telephone: business.phoneFormatted,
@@ -92,4 +93,3 @@ export default function RootLayout({
     </html>
   );
 }
-

@@ -10,7 +10,7 @@ import galleryData from "@/data/gallery.da.json";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-white">
       <Hero content={contentData} />
       <Services services={contentData.services} />
       <Gallery items={galleryData} />
@@ -28,4 +28,3 @@ export default function Home() {
     </main>
   );
 }
-

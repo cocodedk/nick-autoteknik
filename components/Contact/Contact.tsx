@@ -14,7 +14,7 @@ export function Contact({ business }: ContactProps) {
         <h2 className="text-3xl md:text-4xl font-bold text-black mb-2 text-center">
           Kontakt & Lokation
         </h2>
-        <div className="w-24 h-1 bg-brand-red mx-auto mb-8"></div>
+        <div className="w-full h-1 bg-brand-red mb-8"></div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div className="order-2 lg:order-1">
             <ContactInfo business={business} />

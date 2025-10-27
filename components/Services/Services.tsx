@@ -13,7 +13,7 @@ export function Services({ services }: ServicesProps) {
         <h2 className="text-3xl md:text-4xl font-bold text-black mb-2 text-center">
           Vores Services
         </h2>
-        <div className="w-24 h-1 bg-brand-red mx-auto mb-8"></div>
+        <div className="w-full h-1 bg-brand-red mb-8"></div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <ServiceCard key={index} service={service} />

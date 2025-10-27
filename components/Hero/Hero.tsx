@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { HeroCTA } from "./HeroCTA";
 import { HeroUSP } from "./HeroUSP";
 import type { ContentData } from "@/components/shared/types";
@@ -11,16 +12,25 @@ export function Hero({ content }: HeroProps) {
   const { business, hero } = content;
 
   return (
-    <section className="relative bg-white py-8 md:py-12 overflow-hidden">
-      {/* Diagonal red accent stripe */}
-      <div className="absolute top-0 right-0 w-64 h-64 bg-brand-red opacity-5 transform rotate-12 translate-x-32 -translate-y-32" />
+    <section className="relative bg-white pt-3 md:pt-6 pb-8 md:pb-12 overflow-hidden">
+      {/* Diagonal red accent removed */}
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center md:text-left">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-black mb-4">
-            <span className="inline-block">{business.name}</span>
-            <span className="block h-1 w-32 bg-brand-red mt-2 mx-auto md:mx-0"></span>
-          </h1>
+          <div className="flex justify-center md:justify-start mb-2 bg-white">
+            <Image
+              src="/logo/nick-autoteknik-logo.png"
+              alt={`${business.name} logo`}
+              width={160}
+              height={48}
+              priority
+            />
+          </div>
+          <span
+            className="block h-1 w-full bg-brand-red mt-2"
+            aria-hidden="true"
+          />
+          {/* Removed main heading per request */}
           <p className="text-xl md:text-2xl text-gray-900 font-semibold mb-2">
             {hero.tagline}
           </p>
