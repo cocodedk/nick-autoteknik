@@ -6,7 +6,7 @@
     "city": "Rødovre",
     "phone": "26 80 81 88",
     "phoneFormatted": "+4526808188",
-    "email": "nickautoteknik@gmail.com",
+    "email": "info@nick-autoteknik.dk",
     "cvr": "41401869",
     "hours": {
       "monday": "08:00-17:00",
@@ -66,4 +66,3 @@
     ]
   }
 }
-

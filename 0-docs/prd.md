@@ -1,7 +1,7 @@
 # Mini-research (kilder i fodnoter)
 
 * **Virksomhed:** “Nick Autoteknik”, autoværksted i Rødovre. Facebook-siden angiver adressen **Nyholms Allé 21, port 3, 2610 Rødovre** og beskriver service/reparation af alle bilmærker. ([Facebook][1])
-* **CVR & stamdata:** CVR **41401869**, virksomhedsform ENK, start 15/06/2020, adresse Nyholms Alle 21, 2610 Rødovre. Kontakt-email ses oplyst som **[nickautoteknik@gmail.com](mailto:nickautoteknik@gmail.com)** i firmadatabase. ([Proff][2])
+* **CVR & stamdata:** CVR **41401869**, virksomhedsform ENK, start 15/06/2020, adresse Nyholms Alle 21, 2610 Rødovre. Kontakt-email: **[info@nick-autoteknik.dk](mailto:info@nick-autoteknik.dk)**. ([Proff][2])
 * **Navn i registre:** Omtales også som “Nick Autoteknik v/Abbas Soltani”. ([Kompass][3])
 * **Fotos:** Findes på Facebook-siden (brugerskabt indhold). ([Facebook][1])
 * **Kort/placering:** Google Maps kan embeddes på adressen (kræver API-nøgle). Direkte visning via “Place Search”/“Embed API” på adressen. (Selve Maps-siden kræver JS, men integrationen er standard). ([Google Maps][4])
@@ -43,7 +43,7 @@
 5. **Kort & kontakt:**
 
    * Embedded Google Map pin på **Nyholms Allé 21, port 3, 2610 Rødovre**
-   * Adresse, telefon, e-mail (**[nickautoteknik@gmail.com](mailto:nickautoteknik@gmail.com)**), åbningstider
+   * Adresse, telefon, e-mail (**[info@nick-autoteknik.dk](mailto:info@nick-autoteknik.dk)**), åbningstider
    * Lille kontaktformular (navn, tlf, emne, besked) → mailto eller form-service (Formspree/Resend)
 6. **Footer:** CVR **41401869**, simple links (Privatliv, Cookies), copyright.
 
@@ -52,7 +52,7 @@
 * **Firmanavn:** Nick Autoteknik. ([Facebook][1])
 * **Adresse:** Nyholms Allé 21, **port 3**, 2610 Rødovre. ([Facebook][1])
 * **CVR:** 41401869. ([Proff][2])
-* **E-mail:** [nickautoteknik@gmail.com](mailto:nickautoteknik@gmail.com) (fra registreringskilde — bekræftes af jer). ([ownr][5])
+* **E-mail:** [info@nick-autoteknik.dk](mailto:info@nick-autoteknik.dk). ([ownr][5])
 * **Telefon:** (oplyses/afklares af jer — ikke entydigt i offentlige kilder).
 * **Åbningstider:** (leveres af jer for korrekthed).
 * **Billedsamling:** 10–20 fotos fra Facebook-siden (værkstedsbilleder, projekter, før/efter). ([Facebook][1])
@@ -116,7 +116,7 @@
 ## 11) Data/inputs vi har brug for fra jer
 
 * Bekræft **telefonnummer** og **åbningstider**.
-* Bekræft **e-mail** ([nickautoteknik@gmail.com](mailto:nickautoteknik@gmail.com)) eller giv den korrekte. ([ownr][5])
+* Bekræft **e-mail** ([info@nick-autoteknik.dk](mailto:info@nick-autoteknik.dk)) eller giv den korrekte. ([ownr][5])
 * Admin-adgang til Facebook-siden **eller** billedpakke (zip) med fotos I må bruge. ([Facebook][1])
 * Google Maps API-nøgle (jeg kan generere anmodningsliste over nødvendige API’er). ([Google Maps][4])
 * (Hvis Google Business-profil findes): link/Place ID — ellers laver vi en hurtig identifikation og sender jer linket til godkendelse.

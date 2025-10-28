@@ -31,7 +31,7 @@ test.describe("Contact Features", () => {
     const emailLink = page.locator('a[href^="mailto:"]');
     await expect(emailLink.first()).toHaveAttribute(
       "href",
-      "mailto:nickautoteknik@gmail.com"
+      "mailto:info@nick-autoteknik.dk"
     );
   });
 });

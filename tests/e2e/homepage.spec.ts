@@ -38,7 +38,7 @@ test.describe("Homepage", () => {
 
     // Check contact info is present
     await expect(page.getByText("26 80 81 88")).toBeVisible();
-    await expect(page.getByText("nickautoteknik@gmail.com")).toBeVisible();
+    await expect(page.getByText("info@nick-autoteknik.dk")).toBeVisible();
     await expect(page.getByText(/Nyholms Allé 21/)).toBeVisible();
     await expect(page.getByText("41401869")).toBeVisible();
   });
