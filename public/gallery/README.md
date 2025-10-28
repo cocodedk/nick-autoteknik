@@ -2,19 +2,19 @@
 
 ## Instruktioner til levering af billeder
 
-Placer jeres værkstedsbilleder i denne mappe med følgende navnekonvention:
+Placer jeres værkstedsbilleder i denne mappe med følgende navnekonvention (PNG):
 
-- `01-lift.jpg` - Bil på lift
-- `02-bremser.jpg` - Bremsearbejde
-- `03-daek.jpg` - Dæk og fælge
-- `04-diagnose.jpg` - Diagnoseudstyr
-- `05-motor.jpg` - Motorarbejde
-- `06-vaerksted.jpg` - Værkstedet
+- `01-lift.png` - Bil på lift
+- `02-bremser.png` - Bremsearbejde
+- `03-daek.png` - Dæk og fælge
+- `04-diagnose.png` - Diagnoseudstyr
+- `05-motor.png` - Motorarbejde
+- `06-vaerksted.png` - Værkstedet
 
 ## Krav til billeder
 
-- **Format:** JPG eller PNG
-- **Navngivning:** Brug kebab-case uden mellemrum (fx `01-lift.jpg`)
+- **Format:** Kun PNG (ønsket format)
+- **Navngivning:** Brug kebab-case uden mellemrum (fx `01-lift.png`)
 - **Størrelse:** Mindst 1200px bred for bedst kvalitet
 - **Rettigheder:** Kun billeder I selv ejer/har tilladelse til
 
@@ -23,5 +23,4 @@ Placer jeres værkstedsbilleder i denne mappe med følgende navnekonvention:
 Hvis I ønsker at ændre beskrivelserne (alt-tekster) til billederne, rediger filen:
 `/data/gallery.da.json`
 
-Billederne vil automatisk blive optimeret af Next.js til WebP/AVIF format.
-
+Bemærk: Ved statisk hosting er Next/Image optimering slået fra. PNG-filer serveres som leveret. Overvej at komprimere billederne inden upload for bedre performance.

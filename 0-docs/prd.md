@@ -65,12 +65,12 @@
 
 * **Kilde & rettigheder:** I udvælger 10–20 egne billeder fra Facebook-siden, downloader dem manuelt og leverer som ZIP-fil. Kun materiale I har rettigheder til.
 * **Placering i projekt:** `public/gallery/` (statiske filer, ingen runtime-API-kald).
-* **Navngivning:** Kebab-case uden mellemrum eller danske tegn (fx `01-lift.jpg`, `02-bremser.jpg`, `03-dæk.jpg`).
+* **Navngivning:** Kebab-case uden mellemrum eller danske tegn (fx `01-lift.png`, `02-bremser.png`, `03-dæk.png`).
 * **Alt-tekster & metadata:** Leveres i JSON-fil `/src/data/gallery.da.json` med struktur:
   ```json
   [
-    { "src": "/gallery/01-lift.jpg", "alt": "Bil på lift til service i værkstedet" },
-    { "src": "/gallery/02-bremser.jpg", "alt": "Udskiftning af bremseskiver og klodser" }
+    { "src": "/gallery/01-lift.png", "alt": "Bil på lift til service i værkstedet" },
+    { "src": "/gallery/02-bremser.png", "alt": "Udskiftning af bremseskiver og klodser" }
   ]
   ```
 * **Optimering:** Next/Image håndterer automatisk compression (WebP/AVIF) og lazy-loading ved runtime på Vercel. For andre hosts kan build-script (fx `sharp`) generere moderne formater.

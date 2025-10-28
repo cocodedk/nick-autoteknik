@@ -5,7 +5,7 @@ import contentData from "@/data/content.da.json";
 const { business } = contentData;
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://nickautoteknik.dk"),
+  metadataBase: new URL("https://nick-autoteknik.dk"),
   title: "Nick Autoteknik - Autoværksted i Rødovre",
   description: `Professionel bilservice og reparation af alle bilmærker i Rødovre. Service, bremser, dæk, diagnose, AC og synsklargøring. Kontakt os på ${business.phone}.`,
   keywords: [
@@ -25,13 +25,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "da_DK",
-    url: "https://nickautoteknik.dk",
+    url: "https://nick-autoteknik.dk",
     siteName: "Nick Autoteknik",
     title: "Nick Autoteknik - Autoværksted i Rødovre",
     description: "Professionel bilservice og reparation af alle bilmærker",
     images: [
       {
-        url: "/opengraph-image",
+        url: "/logo/nick-autoteknik-logo.png",
         width: 1200,
         height: 630,
         alt: "Nick Autoteknik - Autoværksted",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     description: "Professionel bilservice og reparation af alle bilmærker",
     images: [
       {
-        url: "/twitter-image",
+        url: "/logo/nick-autoteknik-logo.png",
         alt: "Nick Autoteknik - Autoværksted",
       },
     ],
@@ -59,11 +59,11 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "AutomotiveBusiness",
-    "@id": "https://nickautoteknik.dk",
+    "@id": "https://nick-autoteknik.dk",
     name: business.name,
-    logo: "https://nickautoteknik.dk/logo/nick-autoteknik-logo.png",
+    logo: "https://nick-autoteknik.dk/logo/nick-autoteknik-logo.png",
     description: "Autoværksted - service og reparation af alle bilmærker",
-    url: "https://nickautoteknik.dk",
+    url: "https://nick-autoteknik.dk",
     telephone: business.phoneFormatted,
     email: business.email,
     sameAs: [

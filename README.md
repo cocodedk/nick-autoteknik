@@ -4,7 +4,7 @@ Professionel hjemmeside for Nick Autoteknik autoværksted i Rødovre.
 
 ## Teknologi
 
-- **Next.js 15** med App Router
+- **Next.js 16** med App Router
 - **TypeScript** for type safety
 - **Tailwind CSS** for styling
 - **Mobile-first** responsive design
@@ -64,6 +64,41 @@ npm run dev
 
 Åbn [http://localhost:3000](http://localhost:3000)
 
+## Build & eksport (statisk)
+
+Projektet er konfigureret til statisk eksport (`next.config.ts` har `output: "export"`).
+
+1) Byg og eksporter
+
+```bash
+npm run build   # kører 'next build && next export'
+```
+
+Det genererer en statisk mappe `out/` med hele websitet.
+
+2) Forhåndsvis lokalt (valgfrit)
+
+```bash
+npx serve out          # simpel preview-server
+# eller
+npx http-server out
+```
+
+Åbn den viste URL (typisk http://localhost:3000 eller http://127.0.0.1:8080).
+
+## Deployment (one.com / Nordicway – statisk hosting)
+
+Da der ikke kører en Node-server på klassisk webhotel, uploades den statiske `out/` mappe:
+
+- Byg: `npm run build` (giver `out/`)
+- Upload indholdet af `out/` til webhotellets rod (fx `public_html/`)
+- Sikr at domænet peger korrekt, og at SSL er aktivt: https://nick-autoteknik.dk
+
+Bemærkninger ved statisk eksport
+- Next/Image optimering er slået fra (`images.unoptimized: true`), så billeder serveres som statiske assets.
+- Dynamiske delingsbilleder (OpenGraph/Twitter) via serverruter er fjernet. Vi bruger en statisk logo-fil i metadata. Du kan erstatte den med egne filer i `public/` og opdatere `app/layout.tsx`.
+- Google Maps embed virker uden server – brug `NEXT_PUBLIC_GOOGLE_MAPS_CID` (uden API-nøgle) eller `NEXT_PUBLIC_GOOGLE_MAPS_PLACE_ID` (evt. med nøgle).
+
 ## Opdatering af indhold
 
 ### Forretningsinfo & services
@@ -82,35 +117,14 @@ Rediger `/data/gallery.da.json`:
 
 ## Deployment på Netlify
 
-### 1. Push til Git
-
-```bash
-git init
-git add .
-git commit -m "Initial commit"
-git remote add origin din-repo-url
-git push -u origin main
-```
-
-### 2. Forbind til Netlify
-
-1. Log ind på [Netlify](https://app.netlify.com)
-2. Klik "Add new site" → "Import existing project"
-3. Vælg dit Git-repository
-4. Build settings er allerede konfigureret i `netlify.toml`
-
-### 3. Miljøvariabler
-
-I Netlify dashboard:
-- Site settings → Environment variables
-- Tilføj: `NEXT_PUBLIC_GOOGLE_MAPS_API_KEY`
+Hvis du hellere vil bruge Netlify, kan siden også deployes derfra som statisk site. Byg lokalt til `out/` og upload, eller lad Netlify køre build (`next build && next export`). `netlify.toml` kan bruges som udgangspunkt.
 
 ## Scripts
 
 ```bash
 npm run dev      # Udvikling (localhost:3000)
-npm run build    # Produktions-build
-npm run start    # Start produktions-server
+npm run build    # Produktions-build + statisk eksport (out/)
+npm run start    # Kun relevant for Node/SSR (ikke nødvendig ved statisk hosting)
 npm run lint     # Kør ESLint
 npm run format   # Formater kode med Prettier
 ```

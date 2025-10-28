@@ -2,7 +2,7 @@
 
 * **Kilde & rettigheder:** I udvælger 10–20 egne billeder fra Facebook-siden (kun materiale I har rettigheder til), downloader dem manuelt og leverer dem til mig (fx som ZIP).
 * **Placering i projekt:** `public/gallery/` (ingen eksterne kald i runtime).
-* **Navngivning:** `01-lift.jpg`, `02-bremser.jpg`, … (kebab-case, ingen mellemrum, danske tegn undgås i filnavn).
+* **Navngivning:** `01-lift.png`, `02-bremser.png`, … (kebab-case, ingen mellemrum, danske tegn undgås i filnavn).
 * **Alt-tekster:** Leveres i en lille YAML/JSON (se eksempel nedenfor) for tilgængelighed (WCAG).
 * **Optimering:** Komprimeres ved import (build step) og leveres i moderne formater (WebP/AVIF) + lazy-loading.
 * **Cache/Performance:** Ingen runtime-cache nødvendig; alt er statisk.
@@ -12,9 +12,9 @@
 ```
 /public
   /gallery
-    01-lift.jpg
-    02-bremser.jpg
-    03-dæk.jpg
+    01-lift.png
+    02-bremser.png
+    03-dæk.png
     ...
 /src
   /components
@@ -29,9 +29,9 @@ pages/
 
 ```json
 [
-  { "src": "/gallery/01-lift.jpg", "alt": "Bil på lift til service i værkstedet" },
-  { "src": "/gallery/02-bremser.jpg", "alt": "Udskiftning af bremseskiver og klodser" },
-  { "src": "/gallery/03-dæk.jpg", "alt": "Montering af nye dæk og afbalancering" }
+  { "src": "/gallery/01-lift.png", "alt": "Bil på lift til service i værkstedet" },
+  { "src": "/gallery/02-bremser.png", "alt": "Udskiftning af bremseskiver og klodser" },
+  { "src": "/gallery/03-dæk.png", "alt": "Montering af nye dæk og afbalancering" }
 ]
 ```
 
