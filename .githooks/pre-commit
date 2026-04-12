@@ -1,0 +1,6 @@
+#!/bin/sh
+set -eu
+
+SMOKE_CMD="npm run lint"
+
+$SMOKE_CMD

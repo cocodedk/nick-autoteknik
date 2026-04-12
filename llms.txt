@@ -1,0 +1,21 @@
+# nick-autoteknik
+
+> Professional website for Nick Autoteknik, an auto repair shop in Rødovre, Denmark. Built with Next.js and Tailwind CSS.
+
+## Project
+
+- [GitHub Repository](https://github.com/cocodedk/nick-autoteknik)
+- [Website](https://cocodedk.github.io/nick-autoteknik/)
+- [Author](https://cocode.dk)
+
+## Source
+
+- [App pages](https://github.com/cocodedk/nick-autoteknik/tree/master/app)
+- [Components](https://github.com/cocodedk/nick-autoteknik/tree/master/components)
+- [README](https://github.com/cocodedk/nick-autoteknik/blob/master/README.md)
+- [CLAUDE.md](https://github.com/cocodedk/nick-autoteknik/blob/master/CLAUDE.md)
+
+## Stack
+
+- Next.js (App Router, static export), TypeScript, Tailwind CSS
+- Netlify deployment, Playwright (e2e tests)
